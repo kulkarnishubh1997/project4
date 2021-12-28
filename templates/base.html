@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>base page</title>
+    {% endblock %}
+</head>
+<style>
+    h1{
+        background-color: aquamarine;
+        text-align: center;
+    }
+    header h1{
+        background-color: blueviolet;
+    }
+    footer h2{
+        background-color: burlywood;
+
+    }
+</style>
+{% block body %}
+<body>
+    <h1>this is base page</h1>
+    <header><h1>this is head tag</h1></header>
+    {% block section %}
+    <section>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos veritatis in beatae deleniti et assumenda minima pariatur
+         tenetur voluptates commodi eaque odit, repellendus 
+        accusantium reiciendis quisquam! Placeat illo iste voluptas impedit provident, a itaque recusandae adipisci nesciunt.</p>
+    </section>
+    {% endblock %}
+    <footer><h2>this is footer page</h2>
+    </footer>
+</body>
+{% endblock %}
+</html>
