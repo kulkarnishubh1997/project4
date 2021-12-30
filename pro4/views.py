@@ -12,5 +12,3 @@ def child1(request):
 
 
 
-
-
